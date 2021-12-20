@@ -39,7 +39,7 @@ describe('OrbitCountsComponent', () => {
 
 	component.satellites = [new Satellite("Cat Scanner", "Imaging", "2012-01-05", "LOW", true), new Satellite("Cat Scanner", "Imaging", "2012-01-05", "LOW", true)];
 	fixture.detectChanges();
-	counts = element.query(By.css('.counts-total'));
+	counts = element.query(By.css('.counts-'));
 	expect(counts.nativeElement.innerHTML).toBe('2');
 
 	component.satellites = [];
